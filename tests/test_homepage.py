@@ -10,5 +10,5 @@ class TestHomepage:
         homepage_nav = HomepageNav(self.driver)
         sign_in_nav = SignInPageNav(self.driver)
         homepage_nav.get_sign_in_button().click()
-        assert sign_in_nav.get_sign_in_page_link()
+        assert sign_in_nav.get_sign_in_page_link(), "Registration page error"
 
