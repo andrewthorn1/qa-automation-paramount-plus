@@ -13,4 +13,4 @@ class HomepageNav(SeleniumBase):
         self.__sign_in_locator: str = '//a[contains(text(),"SIGN IN")]'
 
     def get_sign_in_button(self) -> WebElement:
-        return self.is_visible('css', self.__sign_in_locator, 'Search')
+        return self.is_visible('xpath', self.__sign_in_locator, 'SIGN IN')
